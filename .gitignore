@@ -1,4 +1,5 @@
+/.dockerignore
+/.git
+/.gitignore
+/docker-compose.debug.yml
 /mcserver
-.dockerignore
-.gitignore
-docker-compose.debug.yml
