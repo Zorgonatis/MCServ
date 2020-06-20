@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  mcserv:
+    image: mcserv
+    build: .
+    ports:
+      - "25565:25565"
+    volumes: 
+      - ./mcserver:/mcserver
