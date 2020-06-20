@@ -4,6 +4,9 @@ services:
   mcserv:
     image: mcserv
     build: .
+    environment:
+      JAVA_OPTS: -Xms2G -Xmx4G -XX:PermSize=256m -Dfml.read.Timeout=560
+      JAR_FILE: forge-1.12.2-14.23.5.2847-universal.jar
     ports:
       - "25565:25565"
     volumes: 
